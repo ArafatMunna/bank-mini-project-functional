@@ -29,7 +29,7 @@ function totalBalance(inputAmount, isAdd){
     const balancePreviousText = balanceTotal.innerText;
     const balancePrevious = parseFloat(balancePreviousText);
 
-    if(balancePrevious > inputAmount){
+    if(balancePrevious >= inputAmount){
         //Update Total Balance
         if(isAdd == true){
             const balanceTotalNew = balancePrevious + inputAmount;
